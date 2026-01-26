@@ -1,0 +1,144 @@
+{
+  "projectName": "pneuservice",
+  "colors": {
+    "primary": "#1B3A5C",
+    "primaryForeground": "#FFFFFF",
+    "secondary": "#E63946",
+    "secondaryForeground": "#FFFFFF",
+    "accent": "#F4A300",
+    "accentForeground": "#1B3A5C",
+    "background": "#F8F9FA",
+    "foreground": "#1A1A2E",
+    "muted": "#E9ECEF",
+    "mutedForeground": "#6C757D",
+    "border": "#DEE2E6"
+  },
+  "typography": {
+    "headingFont": "Montserrat",
+    "bodyFont": "Open Sans",
+    "baseFontSize": "16px"
+  },
+  "layout": [
+    {
+      "name": "Header / Navigation",
+      "description": "Fixed top bar with the Pneuservice logo on the left, navigation links (Servizi, Chi Siamo, Orari, Contatti) centered or right-aligned, and a prominent phone CTA button. On mobile, collapses to a hamburger menu."
+    },
+    {
+      "name": "Hero Section",
+      "description": "Full-width hero with a dark overlay on an automotive/tire background image. Main headline: 'Il vostro specialista di pneumatici dal 1983'. Subheadline emphasizing reliability and professionalism. Two CTA buttons: 'Chiamaci ora' (phone link) and 'I nostri servizi' (scroll anchor). Conveys trust and expertise immediately."
+    },
+    {
+      "name": "Services Section",
+      "description": "Grid of service cards (3 columns desktop, 2 tablet, 1 mobile) showcasing the full range: cambio pneumatici, deposito pneumatici, equilibratura, convergenza, lavaggio ruote, pulizia cerchi, vendita cerchi, controllo valvole e pressione, riparazione, catene da neve, scooter/auto di cortesia. Each card has an icon, title, and short description."
+    },
+    {
+      "name": "About / Chi Siamo Section",
+      "description": "Two-column layout (image left, text right on desktop; stacked on mobile). Highlights 40+ years of experience since 1983, team expertise, and customer trust. Uses one of the provided business images."
+    },
+    {
+      "name": "Gallery Section",
+      "description": "Responsive image gallery showcasing the workshop, equipment, and team using the provided business images. Displays as a grid (3 columns desktop, 2 tablet, 1 mobile) with lightbox functionality on click."
+    },
+    {
+      "name": "Opening Hours Section",
+      "description": "Clean table or card layout showing weekly hours. Monday–Friday 08:00–12:00 / 13:30–18:00 and Saturday 08:00–12:00. Highlights current open/closed status dynamically. Includes a note about the midday break."
+    },
+    {
+      "name": "Location / Contact Section",
+      "description": "Two-column layout: left side shows contact details (address, phone, email) with clickable links; right side embeds an interactive map centered on coordinates 45.856843, 8.982956. No contact form per the brief—direct contact info only."
+    },
+    {
+      "name": "Footer",
+      "description": "Dark background footer with business name, address, phone, email, opening hours summary, and copyright notice. Quick navigation links repeated for accessibility."
+    },
+    {
+      "name": "Draft Preview Modal",
+      "description": "An overlay modal shown on page load indicating this is a draft/preview version of the website, as specified in the brief. Dismissible with a button."
+    }
+  ],
+  "components": [
+    {
+      "name": "Navbar",
+      "purpose": "Responsive fixed navigation bar with logo, nav links (Servizi, Chi Siamo, Orari, Contatti), and a phone CTA. Collapses to hamburger on mobile with smooth slide-in menu."
+    },
+    {
+      "name": "HeroSection",
+      "purpose": "Full-width banner with background image, dark gradient overlay, headline text, subtext, and two CTA buttons. Sets the visual tone for the site."
+    },
+    {
+      "name": "ServiceCard",
+      "purpose": "Reusable card component displaying a service icon, title, and brief description. Used in the Services grid. Hover effect with subtle elevation or border color change."
+    },
+    {
+      "name": "SectionHeading",
+      "purpose": "Consistent section title component with a heading, optional subtitle, and a decorative accent underline in the secondary color. Used to introduce each major section."
+    },
+    {
+      "name": "AboutBlock",
+      "purpose": "Two-column content block with an image on one side and text on the other. Used for the Chi Siamo section to tell the company story."
+    },
+    {
+      "name": "ImageGallery",
+      "purpose": "Responsive grid gallery displaying workshop photos. Supports lightbox/modal view on image click for full-size viewing."
+    },
+    {
+      "name": "OpeningHoursTable",
+      "purpose": "Structured table or card list showing daily opening hours. Visually distinguishes weekdays from Saturday. Can highlight today's hours."
+    },
+    {
+      "name": "ContactInfo",
+      "purpose": "Displays address, phone (tel: link), and email (mailto: link) with icons. All contact details are clickable for mobile usability."
+    },
+    {
+      "name": "MapEmbed",
+      "purpose": "Embedded interactive map (e.g., Google Maps or OpenStreetMap) centered on the business coordinates (45.856843, 8.982956) with a pin marker."
+    },
+    {
+      "name": "Footer",
+      "purpose": "Site-wide footer with business info summary, quick links, and copyright. Dark themed to contrast with the light page background."
+    },
+    {
+      "name": "DraftModal",
+      "purpose": "Overlay modal displayed on page load to indicate the site is a draft preview. Contains a message and a dismiss button."
+    },
+    {
+      "name": "CTAButton",
+      "purpose": "Reusable call-to-action button with primary and secondary variants. Used for phone links, scroll-to-section actions, and other interactive elements."
+    }
+  ],
+  "featureImplementations": [
+    {
+      "feature": "Language: Italian (it)",
+      "details": "All UI text, headings, labels, and content rendered in Italian. HTML lang attribute set to 'it'. Includes proper Italian formatting for phone numbers and addresses."
+    },
+    {
+      "feature": "Direct Contact Display",
+      "details": "No contact form. Phone number displayed as a clickable tel: link. Email as a clickable mailto: link. Address linked to map directions. All prominent and accessible."
+    },
+    {
+      "feature": "Draft Preview Modal",
+      "details": "On initial page load, a centered modal overlay appears with a message like 'Anteprima del sito — Questa è una bozza del sito web.' and a dismiss button. Uses a semi-transparent backdrop."
+    },
+    {
+      "feature": "Responsive Design",
+      "details": "Mobile-first approach. Breakpoints at 640px (sm), 768px (md), 1024px (lg). Navigation collapses to hamburger. Service grid adjusts columns. Two-column sections stack vertically. Touch-friendly tap targets (min 44px)."
+    },
+    {
+      "feature": "Smooth Scroll Navigation",
+      "details": "Navbar links use smooth scrolling to anchor sections. Active section highlighted in the nav as user scrolls. Offset accounts for fixed header height."
+    },
+    {
+      "feature": "Dynamic Open/Closed Status",
+      "details": "JavaScript checks current day/time against opening hours and displays a green 'Aperto' or red 'Chiuso' badge in the header or opening hours section."
+    },
+    {
+      "feature": "SEO & Structured Data",
+      "details": "Schema.org LocalBusiness JSON-LD markup with business name, address, phone, email, coordinates, opening hours, and logo. Meta tags for description and Open Graph."
+    },
+    {
+      "feature": "Performance Optimization",
+      "details": "Lazy loading for gallery images. Optimized font loading with font-display: swap. Minimal CSS and JS. Compressed assets where possible."
+    }
+  ],
+  "additionalNotes": "The site targets a local Swiss-Italian audience in Ticino. The design should feel professional, trustworthy, and automotive-industry appropriate — clean lines, bold typography, and a strong color palette of deep blue (trust/reliability), red (energy/Swiss identity), and amber accents (attention/warmth). Since the business has operated since 1983, the design should convey established credibility without feeling outdated. All content in Italian. The single-page layout ensures fast load times and simple navigation for a local service business. The URL slug is 'pneuservice'."
+}
